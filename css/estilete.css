@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500);
+  
+/*  Dany Orlando Santos Morel
+theorlan2@gmail.com
+ */
+ * {	margin: 0px auto;	padding: 0px;	text-align: center;	list-style: none;	}
+
+ 
+body {	background-color: #bee7e0;	}
+ .cont_principal {	position: absolute;	width: 100%;	 	background-color: #bee7e0;	}
+
+ .cont_libro_sup {	position: relative; top: 150px;	height:350px; width: 240px; z-index: 5;   -webkit-transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ -ms-transition: all 0.5s;
+ -o-transition: all 0.5s;
+ transition: all 0.5s;
+box-shadow: 0px 45px 100px -45px rgba(0, 0, 0, 0.4);
+ 	}
+
+.cont_libro_sup img {
+  width:240px;
+  height:350px
+}
+
+ .cont_libro_back {	 position: relative; margin-top: -350px;	width: 320px;	height: 650px; z-index: 2; background-color: #fff;   -webkit-transition: all 375ms ease-in-out 50ms ;
+-moz-transition: all 375ms ease-in-out 50ms ;
+-ms-transition: all 375ms ease-in-out 50ms ;
+-o-transition: all 375ms ease-in-out 50ms ;
+transition: all 375ms ease-in-out 50ms ;
+	opacity: 0;
+border-radius: 3px;
+box-shadow:0px 20px 34px -20px rgba(0, 0, 0, 0.35);
+overflow: hidden;
+transform: translate(0px, 40px);
+	}
+
+.is-selected > .cont_libro_back  {	opacity: 1; transform: translate(0px, 0px);
+}
+
+.is-selected > .cont_libro_sup  {	top: 30px;	}
+
+.gallery-cell {	  width: 320px;	  margin: 35px 0px; }
+
+.cont_btn_buy {	background-color: #2D292A; position: absolute;	bottom: 0px;	width: 100%;	height:50px; 	}
+
+.cont_btn_buy > a { color: #fff; 	font-family: "Poppins";  text-decoration: none;	display: block;	width: 100%;	padding: 14px 0px;	}
+
+.cont_detalles_lib {	position: relative;	 	width: 240px;	height: 50px;    top: 430px; font-family: "Poppins";	}
+
+.cont_detalles_lib > p {  color: #c6c5c7;		font-family: "Poppins"; font-size: 14px;	}
+
+.cont_detalles_lib > h4 {	color: #5b5a5f;  font-size: 16px;	}
+
+.precio {	color: #5ec824;	 font-weight: 300; font-size: 16px;}
